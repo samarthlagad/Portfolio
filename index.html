@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Samarth Lagad | Aspiring Software &amp; Security Engineer</title>
+<meta name="description" content="Portfolio of Samarth Lagad, a student building secure software.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Sora:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<canvas id="net" aria-hidden="true"></canvas>
+<header class="nav">
+  <a href="#home" class="logo">samarth<span>.sec</span></a>
+  <nav>
+    <a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a>
+    <a href="#journey">Journey</a><a href="#certs">Certs</a><a href="#contact">Contact</a>
+  </nav>
+  <button id="theme" aria-label="Toggle dark mode">◐</button>
+</header>
+
+<main>
+<section id="home" class="hero">
+  <div class="hero-text">
+    <p class="mono hello">Hi, I'm</p>
+    <h1>Samarth Lagad</h1>
+    <p class="role mono"><span id="typed"></span><i class="caret"></i></p>
+    <p class="lead">Student building software that holds up under attack. I turn security ideas into tools people can actually use.</p>
+    <div class="cta">
+      <a class="btn primary" href="#projects">See my projects</a>
+      <a class="btn" href="resume.pdf" download>Download resume</a>
+    </div>
+  </div>
+  <div class="photo" data-tilt>
+    <img src="assets/photo.jpg" alt="Portrait of Samarth Lagad" onerror="this.replaceWith(Object.assign(document.createElement('div'),{className:'ph',textContent:'SL'}))">
+  </div>
+</section>
+
+<section id="about" class="reveal">
+  <h2>About</h2>
+  <p>I'm a student heading toward a career in software engineering and cybersecurity. I like understanding how things break, then building them so they don't. <em class="todo">Replace with your bio.</em></p>
+  <ul class="facts mono">
+    <li><b>Studying</b> Your degree, your college (add)</li>
+    <li><b>Graduating</b> Year (add)</li>
+    <li><b>Based in</b> Maharashtra, India</li>
+  </ul>
+</section>
+
+<section id="skills" class="reveal">
+  <h2>Skills</h2>
+  <div class="skill-grid">
+    <div class="card"><h3>Languages</h3><p class="tags"><span>JavaScript</span><span>TypeScript</span><span>Python</span><span>HTML/CSS</span></p></div>
+    <div class="card"><h3>Security</h3><p class="tags"><span>Phishing analysis</span><span>Web security</span><span>Wireshark</span><span>Burp Suite</span></p></div>
+    <div class="card"><h3>Tools</h3><p class="tags"><span>Git</span><span>Linux</span><span>VS Code</span><span>Node.js</span></p></div>
+  </div>
+</section>
+
+<section id="projects" class="reveal">
+  <h2>Projects</h2>
+  <div class="proj-grid">
+    <article class="card proj" data-tilt><h3>QRShield</h3><p>Scans QR codes in the browser and scores them for quishing risk before any link opens.</p><p class="tags"><span>JS</span><span>Heuristics</span><span>Camera API</span></p><a href="https://github.com/samarthlagad/QRSheild">View code</a></article>
+    <article class="card proj" data-tilt><h3>Project two</h3><p class="todo">Add a one-line description.</p><p class="tags"><span>Tech</span></p><a href="#">View code</a></article>
+    <article class="card proj" data-tilt><h3>Project three</h3><p class="todo">Add a one-line description.</p><p class="tags"><span>Tech</span></p><a href="#">View code</a></article>
+    <article class="card proj" data-tilt><h3>Project four</h3><p class="todo">Add a one-line description.</p><p class="tags"><span>Tech</span></p><a href="#">View code</a></article>
+    <article class="card proj" data-tilt><h3>Project five</h3><p class="todo">Add a one-line description.</p><p class="tags"><span>Tech</span></p><a href="#">View code</a></article>
+    <article class="card proj" data-tilt><h3>Project six</h3><p class="todo">Add a one-line description.</p><p class="tags"><span>Tech</span></p><a href="#">View code</a></article>
+  </div>
+</section>
+
+<section id="journey" class="reveal">
+  <h2>Journey</h2>
+  <ol class="timeline">
+    <li><time class="mono">Now</time><div><h3>Student</h3><p class="todo">Add degree and college.</p></div></li>
+    <li><time class="mono">Year</time><div><h3>Internship / hackathon / club</h3><p class="todo">Add what you did.</p></div></li>
+    <li><time class="mono">Year</time><div><h3>Earlier education</h3><p class="todo">Add school and results.</p></div></li>
+  </ol>
+</section>
+
+<section id="certs" class="reveal">
+  <h2>Certifications &amp; achievements</h2>
+  <div class="skill-grid">
+    <div class="card"><h3>Certificate name</h3><p class="todo">Issuer, year</p></div>
+    <div class="card"><h3>Certificate name</h3><p class="todo">Issuer, year</p></div>
+    <div class="card"><h3>Achievement</h3><p class="todo">CTF, rank or award</p></div>
+  </div>
+</section>
+
+<section id="contact" class="reveal">
+  <h2>Contact</h2>
+  <p>Open to internships and collaboration. Send a message and your email app will open with it filled in.</p>
+  <form id="form" novalidate>
+    <label>Name<input name="name" required autocomplete="name"></label>
+    <label>Email<input name="email" type="email" required autocomplete="email"></label>
+    <label>Message<textarea name="msg" rows="4" required></textarea></label>
+    <p id="err" role="alert"></p>
+    <button class="btn primary" type="submit">Open email draft</button>
+  </form>
+  <p class="links mono"><a href="https://github.com/samarthlagad">GitHub</a><a href="#">LinkedIn</a><a href="mailto:samarth.r.lagad@gmail.com">Email</a></p>
+</section>
+</main>
+<footer class="mono">© <span id="yr"></span> Samarth Lagad</footer>
+
+<script src="js/particles.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
