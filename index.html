@@ -1,30 +1,48 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="light">
+<html lang="en" data-theme="dark">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Samarth Lagad | Aspiring Software &amp; Security Engineer</title>
 <meta name="description" content="Portfolio of Samarth Lagad, a student building secure software.">
+<meta name="theme-color" content="#070312">
+<meta name="color-scheme" content="dark">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Samarth Lagad | Software &amp; Security Engineer in the making">
+<meta property="og:description" content="Student building software that holds up under attack. Projects, skills and contact.">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 46'%3E%3Cpath d='M20 2 37 8v15c0 10-8 17-17 21C11 40 3 33 3 23V8Z' fill='%23120a26' stroke='%238b5cf6' stroke-width='2.5'/%3E%3Ctext x='20' y='29' font-size='15' font-family='serif' font-weight='700' text-anchor='middle' fill='%23f1ecff'%3ESL%3C/text%3E%3C/svg%3E">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Samarth Lagad","jobTitle":"Student, aspiring Software and Security Engineer","url":"https://github.com/samarthlagad","email":"mailto:samarth.r.lagad@gmail.com","sameAs":["https://github.com/samarthlagad"]}</script>
+<noscript><style>.reveal,#pre{display:none!important}.stag>*{opacity:1!important;transform:none!important;filter:none!important}</style></noscript>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Sora:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter+Tight:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+<a class="skip" href="#about">Skip to content</a>
+<div id="pre" aria-hidden="true"><div class="pre-in"><span class="mono">booting portfolio</span><b id="pct">000</b><i id="pbar"></i></div></div>
+<div id="wipe" aria-hidden="true"><span id="wlabel"></span></div>
+<div id="cur"></div><div id="ring"></div>
+<div id="bar"></div><div id="glow"></div>
+<div class="hud mono" aria-hidden="true"><span id="scene">Surface</span><b id="depth">0000</b><small>m</small></div>
+<div class="aurora" aria-hidden="true"><i></i><i></i><i></i></div>
 <canvas id="net" aria-hidden="true"></canvas>
 <header class="nav">
-  <a href="#home" class="logo">samarth<span>.sec</span></a>
-  <nav>
+  <a href="#home" class="logo" aria-label="Samarth Lagad, home"><svg class="mark" viewBox="0 0 40 46" width="34" height="38" aria-hidden="true"><defs><linearGradient id="lg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#22d3ee"/><stop offset=".5" stop-color="#8b5cf6"/><stop offset="1" stop-color="#ff4d8d"/></linearGradient></defs><path class="shield" d="M20 2 37 8v15c0 10-8 17-17 21C11 40 3 33 3 23V8Z" fill="rgba(139,92,246,.14)" stroke="url(#lg)" stroke-width="2.2" stroke-linejoin="round"/><text class="mk" x="20" y="29" text-anchor="middle">SL</text></svg><span class="wm">samarth<span>.sec</span></span></a>
+  <button id="menu" aria-label="Open menu" aria-expanded="false" aria-controls="links"><i></i><i></i></button>
+  <nav id="links" aria-label="Main">
     <a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a>
     <a href="#journey">Journey</a><a href="#certs">Certs</a><a href="#contact">Contact</a>
   </nav>
-  <button id="theme" aria-label="Toggle dark mode">◐</button>
 </header>
 
 <main>
 <section id="home" class="hero">
   <div class="hero-text">
+    <p class="status"><i></i>Open to internships · Class of 2029</p>
     <p class="mono hello">Hi, I'm</p>
-    <h1>Samarth Lagad</h1>
+    <h1 aria-label="Samarth Lagad">Samarth Lagad</h1>
     <p class="role mono"><span id="typed"></span><i class="caret"></i></p>
     <p class="lead">Student building software that holds up under attack. I turn security ideas into tools people can actually use.</p>
     <div class="cta">
@@ -32,14 +50,18 @@
       <a class="btn" href="resume.pdf" download>Download resume</a>
     </div>
   </div>
+  <div class="stage">
   <div class="photo" data-tilt>
-    <img src="assets/photo.jpg" alt="Portrait of Samarth Lagad" onerror="this.replaceWith(Object.assign(document.createElement('div'),{className:'ph',textContent:'SL'}))">
+    <img src="assets/photo.jpg" width="480" height="600" decoding="async" alt="Portrait of Samarth Lagad" onerror="this.replaceWith(Object.assign(document.createElement('div'),{className:'ph',textContent:'SL'}))">
+  </div>
+  <div class="cube-wrap" aria-hidden="true"><div class="cube"><b>SL</b><b>01</b><b>&lt;/&gt;</b><b>#!</b><b>{ }</b><b>SEC</b></div></div>
   </div>
 </section>
 
+<div class="marquee" aria-hidden="true"><div><span>JavaScript</span><b>◆</b><span>TypeScript</span><b>◆</b><span>Python</span><b>◆</b><span>Phishing analysis</span><b>◆</b><span>Web security</span><b>◆</b><span>Wireshark</span><b>◆</b><span>Burp Suite</span><b>◆</b><span>Linux</span><b>◆</b><span>Git</span><b>◆</b><span>Node.js</span><b>◆</b><span>JavaScript</span><b>◆</b><span>TypeScript</span><b>◆</b><span>Python</span><b>◆</b><span>Phishing analysis</span><b>◆</b><span>Web security</span><b>◆</b><span>Wireshark</span><b>◆</b><span>Burp Suite</span><b>◆</b><span>Linux</span><b>◆</b><span>Git</span><b>◆</b><span>Node.js</span><b>◆</b></div></div>
 <section id="about" class="reveal">
   <h2>About</h2>
-  <p>I'm a student heading toward a career in software engineering and cybersecurity. I like understanding how things break, then building them so they don't. <em class="todo">Replace with your bio.</em></p>
+  <p>I'm a student heading toward a career in software engineering and cybersecurity. I like understanding how things break, then building them so they don't. Every project here is a step toward software people can trust. <em class="todo">Replace with your bio.</em></p>
   <ul class="facts mono">
     <li><b>Studying</b> Your degree, your college (add)</li>
     <li><b>Graduating</b> Year (add)</li>
@@ -49,23 +71,37 @@
 
 <section id="skills" class="reveal">
   <h2>Skills</h2>
-  <div class="skill-grid">
+  <div class="skill-grid stag">
     <div class="card"><h3>Languages</h3><p class="tags"><span>JavaScript</span><span>TypeScript</span><span>Python</span><span>HTML/CSS</span></p></div>
     <div class="card"><h3>Security</h3><p class="tags"><span>Phishing analysis</span><span>Web security</span><span>Wireshark</span><span>Burp Suite</span></p></div>
     <div class="card"><h3>Tools</h3><p class="tags"><span>Git</span><span>Linux</span><span>VS Code</span><span>Node.js</span></p></div>
   </div>
+  <div class="bars">
+    <div class="bar" style="--lv:75"><span>JavaScript</span><i><b></b></i><em data-count="75" data-suffix="%">0%</em></div>
+    <div class="bar" style="--lv:65"><span>TypeScript</span><i><b></b></i><em data-count="65" data-suffix="%">0%</em></div>
+    <div class="bar" style="--lv:70"><span>Python</span><i><b></b></i><em data-count="70" data-suffix="%">0%</em></div>
+    <div class="bar" style="--lv:60"><span>Web security</span><i><b></b></i><em data-count="60" data-suffix="%">0%</em></div>
+  </div>
+  <div class="stats">
+    <div><b id="s-proj" data-count="1">0</b><span>Projects built</span></div>
+    <div><b id="s-skill" data-count="12">0</b><span>Skills &amp; tools</span></div>
+    <div><b data-count="2029" data-from="2020">0</b><span>Graduating</span></div>
+  </div>
 </section>
 
-<section id="projects" class="reveal">
+<section id="projects" class="reveal pinwrap">
+ <div class="sticky">
   <h2>Projects</h2>
-  <div class="proj-grid">
+  <p class="mono hint">Keep scrolling: the projects slide sideways</p>
+  <div class="proj-grid stag">
     <article class="card proj" data-tilt><h3>QRShield</h3><p>Scans QR codes in the browser and scores them for quishing risk before any link opens.</p><p class="tags"><span>JS</span><span>Heuristics</span><span>Camera API</span></p><a href="https://github.com/samarthlagad/QRSheild">View code</a></article>
-    <article class="card proj" data-tilt><h3>Project two</h3><p class="todo">Add a one-line description.</p><p class="tags"><span>Tech</span></p><a href="#">View code</a></article>
-    <article class="card proj" data-tilt><h3>Project three</h3><p class="todo">Add a one-line description.</p><p class="tags"><span>Tech</span></p><a href="#">View code</a></article>
-    <article class="card proj" data-tilt><h3>Project four</h3><p class="todo">Add a one-line description.</p><p class="tags"><span>Tech</span></p><a href="#">View code</a></article>
-    <article class="card proj" data-tilt><h3>Project five</h3><p class="todo">Add a one-line description.</p><p class="tags"><span>Tech</span></p><a href="#">View code</a></article>
-    <article class="card proj" data-tilt><h3>Project six</h3><p class="todo">Add a one-line description.</p><p class="tags"><span>Tech</span></p><a href="#">View code</a></article>
+    <article class="card proj" data-tilt hidden><h3>Project two</h3><p class="todo">Add a one-line description.</p><p class="tags"><span>Tech</span></p><a href="#">View code</a></article>
+    <article class="card proj" data-tilt hidden><h3>Project three</h3><p class="todo">Add a one-line description.</p><p class="tags"><span>Tech</span></p><a href="#">View code</a></article>
+    <article class="card proj" data-tilt hidden><h3>Project four</h3><p class="todo">Add a one-line description.</p><p class="tags"><span>Tech</span></p><a href="#">View code</a></article>
+    <article class="card proj" data-tilt hidden><h3>Project five</h3><p class="todo">Add a one-line description.</p><p class="tags"><span>Tech</span></p><a href="#">View code</a></article>
+    <article class="card proj" data-tilt hidden><h3>Project six</h3><p class="todo">Add a one-line description.</p><p class="tags"><span>Tech</span></p><a href="#">View code</a></article>
   </div>
+ </div>
 </section>
 
 <section id="journey" class="reveal">
@@ -79,7 +115,7 @@
 
 <section id="certs" class="reveal">
   <h2>Certifications &amp; achievements</h2>
-  <div class="skill-grid">
+  <div class="skill-grid stag">
     <div class="card"><h3>Certificate name</h3><p class="todo">Issuer, year</p></div>
     <div class="card"><h3>Certificate name</h3><p class="todo">Issuer, year</p></div>
     <div class="card"><h3>Achievement</h3><p class="todo">CTF, rank or award</p></div>
@@ -99,7 +135,10 @@
   <p class="links mono"><a href="https://github.com/samarthlagad">GitHub</a><a href="#">LinkedIn</a><a href="mailto:samarth.r.lagad@gmail.com">Email</a></p>
 </section>
 </main>
-<footer class="mono">© <span id="yr"></span> Samarth Lagad</footer>
+<footer><a class="bigcta" href="mailto:samarth.r.lagad@gmail.com">Let's build something <em>secure</em>.</a><p class="mono">© <span id="yr"></span> Samarth Lagad</p></footer>
+<button id="tbtn" class="mono" aria-label="Open terminal">&gt;_ terminal</button>
+<div id="term" hidden role="dialog" aria-label="Terminal"><div class="tbar mono"><span>samarth@portfolio ~</span><button id="tclose" aria-label="Close terminal">×</button></div><div id="tout" class="mono"></div><div class="tin mono"><span>$</span><input id="tcmd" autocomplete="off" spellcheck="false" aria-label="Terminal command"></div></div>
+<button id="top" aria-label="Back to top">↑</button>
 
 <script src="js/particles.js"></script>
 <script src="js/main.js"></script>
